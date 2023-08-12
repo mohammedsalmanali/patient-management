@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracking and Monitoring System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Health Tracking and Monitoring System</h1>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div id="activity-chart"></div>
+            <div id="metrics-chart"></div>
+        </section>
+        <section id="health-activities">
+            <h2>Health Activities</h2>
+            <!-- Add form for recording health activities -->
+        </section>
+        <section id="health-metrics">
+            <h2>Health Metrics</h2>
+            <!-- Add form for recording health metrics -->
+        </section>
+        <section id="health-goals">
+            <h2>Health Goals</h2>
+            <!-- Add form for setting health goals -->
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
